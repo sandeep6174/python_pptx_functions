@@ -136,6 +136,11 @@ def edit_table_style(table, size, font='Arial', text_alignment='center', bold=Fa
                 run.font.color.rgb = RGBColor(color[0], color[1], color[2])
             paragraph.alignment = text_aligner[text_alignment]
 
+ 
+"""Helps yo add picture to ppt"""
+
+def add_picture(slide,path,left=0,top=0,width=None,height=None):
+    slide.shapes.add_picture(path,left,top,width=Inches(width),height=Inches(height))
 
 """Saves ppt at given path"""
 
